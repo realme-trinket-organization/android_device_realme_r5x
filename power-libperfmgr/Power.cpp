@@ -39,6 +39,10 @@
 
 extern struct stats_section master_sections[];
 
+#ifndef TAP_TO_WAKE_NODE
+#define TAP_TO_WAKE_NODE "/proc/touchpanel/double_tap_enable"
+#endif
+
 namespace android {
 namespace hardware {
 namespace power {
@@ -224,7 +228,15 @@ Return<void> Power::powerHint(PowerHint_1_0 hint, int32_t data) {
 }
 
 Return<void> Power::setFeature(Feature feature, bool activate) {
-    // Nothing to do
+    switch (feature) {
+#ifdef TAP_TO_WAKE_NODE
+        case Feature::POWER_FEATURE_DOUBLE_TAP_TO_WAKE:
+            ::android::base::WriteStringToFile(activate ? "1" : "0", TAP_TO_WAKE_NODE);
+            break;
+#endif
+        default:
+            break;
+    }
     return Void();
 }
 
