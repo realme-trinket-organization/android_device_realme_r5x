@@ -35,6 +35,10 @@ TARGET_OTA_ASSERT_DEVICE := RMX1911
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_SCREEN_WIDTH := 720
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
