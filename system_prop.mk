@@ -93,6 +93,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.nfc.port=I2C
 
+# OTG
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.oem.otg_support=true
+
 # RCS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.rcs.supported=0
