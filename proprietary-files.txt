@@ -153,6 +153,16 @@ lib64/libOmxMux.so
 lib64/vendor.qti.hardware.vpp@1.1.so
 lib64/vendor.qti.hardware.vpp@1.2.so
 
+# Media
+lib/extractors/libmmparser.so
+lib/libFileMux.so
+lib/libOmxMux.so
+lib/libmmosal.so
+lib/libmmparser_lite.so
+lib/libmmrtpdecoder.so
+lib/libmmrtpencoder.so
+lib64/libmmosal.so
+
 # Perf
 etc/perf/wlc_model.tflite
 lib/libqti-perfd-client_system.so
