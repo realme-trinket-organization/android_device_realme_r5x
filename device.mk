@@ -73,6 +73,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    init.fingerprint.rc \
     init.qcom.rc \
     fstab.qcom
 
