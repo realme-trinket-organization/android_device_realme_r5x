@@ -83,6 +83,19 @@ lib64/vendor.display.color@1.0.so
 lib64/vendor.display.color@1.1.so
 lib64/vendor.display.color@1.2.so
 
+# Perf
+lib64/vendor.qti.hardware.iop@1.0.so
+lib64/vendor.qti.hardware.iop@2.0.so
+lib64/vendor.qti.hardware.perf@1.0.so
+lib/vendor.qti.hardware.iop@1.0.so
+lib/vendor.qti.hardware.iop@2.0.so
+lib/vendor.qti.hardware.perf@1.0.so
+
+# Power-off alarm
+framework/vendor.qti.hardware.alarm-V1.0-java.jar
+lib/vendor.qti.hardware.alarm@1.0.so
+lib64/vendor.qti.hardware.alarm@1.0.so
+
 # Radio (IMS)
 -app/imssettings/imssettings.apk
 -app/uceShimService/uceShimService.apk
@@ -125,14 +138,6 @@ lib64/vendor.qti.ims.callinfo@1.0.so
 lib64/vendor.qti.ims.rcsconfig@1.0.so
 lib64/vendor.qti.imsrtpservice@1.0.so
 -priv-app/ims/ims.apk
-
-# Perf
-lib64/vendor.qti.hardware.iop@1.0.so
-lib64/vendor.qti.hardware.iop@2.0.so
-lib64/vendor.qti.hardware.perf@1.0.so
-lib/vendor.qti.hardware.iop@1.0.so
-lib/vendor.qti.hardware.iop@2.0.so
-lib/vendor.qti.hardware.perf@1.0.so
 
 # Radio
 -app/datastatusnotification/datastatusnotification.apk
