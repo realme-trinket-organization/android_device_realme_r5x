@@ -152,3 +152,7 @@ etc/sysconfig/qti_whitelist.xml
 -framework/qcrilhook.jar
 -framework/QtiTelephonyServicelibrary.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# SDM
+lib/libsdm-disp-apis.so
+lib64/libsdm-disp-apis.so
