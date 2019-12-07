@@ -1,0 +1,5 @@
+type hal_fingerprint_trinket, coredomain, domain;
+hal_server_domain(hal_fingerprint_trinket, hal_fingerprint)
+
+type hal_fingerprint_trinket_exec, exec_type, file_type;
+init_daemon_domain(hal_fingerprint_trinket)

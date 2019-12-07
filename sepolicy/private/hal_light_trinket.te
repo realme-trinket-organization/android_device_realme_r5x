@@ -1,0 +1,8 @@
+type hal_light_trinket, coredomain, domain;
+hal_server_domain(hal_light_trinket, hal_light)
+
+type hal_light_trinket_exec, exec_type, file_type;
+init_daemon_domain(hal_light_trinket)
+
+allow hal_light_trinket sysfs_white_led:file rw_file_perms;
+allow hal_light_trinket sysfs_white_led:dir search;
