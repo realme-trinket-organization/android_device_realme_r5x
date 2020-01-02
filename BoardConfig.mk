@@ -126,7 +126,7 @@ TARGET_USES_INTERACTION_BOOST := true
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Root Directories
 BOARD_ROOT_EXTRA_SYMLINKS := \
