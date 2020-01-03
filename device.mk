@@ -109,7 +109,10 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.qcom:64
+    android.hardware.power@1.3-service.r5x-libperfmgr
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/powerhint.json:system/etc/powerhint.json
 
 # QTI
 PRODUCT_COPY_FILES += \
