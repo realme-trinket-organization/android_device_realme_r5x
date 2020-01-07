@@ -87,6 +87,7 @@ PRODUCT_PACKAGES += \
     init.oppo.fingerprints.rc \
     init.target.rc \
     init.safailnet.rc \
+    fs_none \
     hal3.rc
 
 # LiveDisplay
