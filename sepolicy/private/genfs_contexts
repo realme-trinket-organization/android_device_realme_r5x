@@ -1,4 +1,5 @@
 genfscon debugfs /wlan0                               u:object_r:debugfs_wlan:s0
+genfscon debugfs /sched_features                      u:object_r:debugfs_sched_features:s0
 
 genfscon sysfs /devices/platform/soc/5e00000.qcom,mdss_mdp/idle_state    u:object_r:sysfs_graphics:s0
 
