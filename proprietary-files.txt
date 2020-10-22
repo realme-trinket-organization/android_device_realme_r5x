@@ -87,21 +87,21 @@ lib64/vendor.display.color@1.0.so
 lib64/vendor.display.color@1.1.so
 lib64/vendor.display.color@1.2.so
 
-# GPS
-etc/permissions/com.qti.location.sdk.xml
-etc/permissions/com.qualcomm.location.xml
-etc/permissions/izat.xt.srv.xml
-etc/permissions/privapp-permissions-com.qualcomm.location.xml
-framework/com.qti.location.sdk.jar
-framework/izat.xt.srv.jar
-lib64/liblocationservice_jni.so
-lib64/libxt_native.so
-lib64/vendor.qti.gnss@1.0.so
-lib64/vendor.qti.gnss@1.1.so
-lib64/vendor.qti.gnss@1.2.so
-lib64/vendor.qti.gnss@2.0.so
-lib64/vendor.qti.gnss@2.1.so
--priv-app/com.qualcomm.location/com.qualcomm.location.apk
+# GPS - from ginkgo-user-9-PKQ1.190616.001-V11.0.11.0.PCOMIXM-release-keys
+etc/permissions/com.qti.location.sdk.xml|cb68a566bd77dcc75bb7547199d528289fac01cb
+etc/permissions/com.qualcomm.location.xml|1d36e7cf8e16813aa13ee6b3fca8d8687b543828
+etc/permissions/izat.xt.srv.xml|a0f460056f27b5495a4d6e959eecf0e429c42a57
+etc/permissions/privapp-permissions-com.qualcomm.location.xml|055fb40299c0a2340bb1b2c9be218a4d2c0f8c72
+framework/com.qti.location.sdk.jar|18e99b347caabe11514dde49397e29e548f0e4ce
+framework/izat.xt.srv.jar|cd5b66ee590c584fb16ef9616ee1a00b00732e0e
+lib64/liblocationservice_jni.so|40a5de4090651d445b15ba0b41176288d8d616fd
+lib64/libxt_native.so|a8884abcee2633c59036d17c18c2bcee764acf9e
+lib64/vendor.qti.gnss@1.0.so|b9ad34e21528c20aa45c8948de372c9a1672c9ce
+lib64/vendor.qti.gnss@1.1.so|5bea1acc61836e0339d60274d948696892b9d296
+lib64/vendor.qti.gnss@1.2.so|78173ae06290c0c774dc57d06d4c41db8f7f4dfe
+lib64/vendor.qti.gnss@2.0.so|c108edebdb7e58d81935aa0a7167461228e21dd2
+lib64/vendor.qti.gnss@2.1.so|7688bb8142214d3ef28ab3bfa0e71eaf6df6e024
+-priv-app/com.qualcomm.location/com.qualcomm.location.apk|04633f77055a28b2826ff6f5836c62560cb93da8
 
 # Media
 lib/extractors/libmmparser.so
