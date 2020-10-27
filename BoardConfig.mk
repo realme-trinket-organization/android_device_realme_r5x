@@ -5,8 +5,8 @@
 #
 
 BOARD_VENDOR := realme
-DEVICE_PATH := device/realme/X2
-PREBUILT_DEVICE_PATH := device/realme/X2-prebuilts
+DEVICE_PATH := device/realme/realme_trinket
+PREBUILT_DEVICE_PATH := device/realme/realme_trinket-prebuilts
 
 #Broken Rules
 BUILD_BROKEN_DUP_RULES := true
@@ -53,7 +53,7 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
 TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_SOURCE := kernel/realme/sm6150
-TARGET_KERNEL_CONFIG := vendor/x2_defconfig
+TARGET_KERNEL_CONFIG := vendor/realme-trinket_defconfig
 endif
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
@@ -66,8 +66,8 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 #Board init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_x2
-TARGET_RECOVERY_DEVICE_MODULES := libinit_x2
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_realme_trinket
+TARGET_RECOVERY_DEVICE_MODULES := libinit_realme_trinket
 
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -103,7 +103,7 @@ TARGET_ENABLE_MEDIADRM_64 := true
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # FOD
-TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.x2
+TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.realme_trinket
 
 # Graphics
 TARGET_USES_DRM_PP := true
@@ -168,4 +168,4 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # Inherit from the proprietary version
--include vendor/realme/X2/BoardConfigVendor.mk
+-include vendor/realme/realme_trinket/BoardConfigVendor.mk

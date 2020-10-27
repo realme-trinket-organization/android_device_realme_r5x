@@ -13,10 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/realme/X2/X2-vendor.mk)
+$(call inherit-product, vendor/realme/realme_trinket/realme_trinket-vendor.mk)
 
 # Prebuilts Path
-PREBUILT_DVC_PATH := device/realme/X2-prebuilts
+PREBUILT_DVC_PATH := device/realme/realme_trinket-prebuilts
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
@@ -91,8 +91,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.x2 \
-    lineage.biometrics.fingerprint.inscreen@1.0-service.x2 \
+    android.hardware.biometrics.fingerprint@2.1-service.realme_trinket \
+    lineage.biometrics.fingerprint.inscreen@1.0-service.realme_trinket \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
 
 # Fingerprint
@@ -166,7 +166,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors Hal
 #PRODUCT_PACKAGES += \
-#    android.hardware.sensors@1.0-impl.x2
+#    android.hardware.sensors@1.0-impl.realme_trinket
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -206,16 +206,16 @@ PRODUCT_BOOT_JARS += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.x2
+    android.hardware.light@2.0-service.realme_trinket
 
 # Q Prebuilts
 PRODUCT_COPY_FILES += \
-    $(PREBUILT_DVC_PATH)/Hals/lib/android.hardware.sensors@1.0-impl.x2.so:system/lib/hw/android.hardware.sensors@1.0-impl.x2.so \
-    $(PREBUILT_DVC_PATH)/Hals/lib64/android.hardware.sensors@1.0-impl.x2.so:system/lib64/hw/android.hardware.sensors@1.0-impl.x2.so \
+    $(PREBUILT_DVC_PATH)/Hals/lib/android.hardware.sensors@1.0-impl.realme_trinket.so:system/lib/hw/android.hardware.sensors@1.0-impl.realme_trinket.so \
+    $(PREBUILT_DVC_PATH)/Hals/lib64/android.hardware.sensors@1.0-impl.realme_trinket.so:system/lib64/hw/android.hardware.sensors@1.0-impl.realme_trinket.so \
     $(PREBUILT_DVC_PATH)/Hals/lib64/power.qcom.so:system/lib64/hw/power.qcom.so
 
 PRODUCT_PACKAGES += \
-    multihal_x2
+    multihal_realme_trinket
 
 # RCS
 PRODUCT_PACKAGES += \

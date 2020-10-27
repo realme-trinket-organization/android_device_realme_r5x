@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=X2
+DEVICE=realme_trinket
 VENDOR=realme
 
 # Load extract_utils and do some sanity checks

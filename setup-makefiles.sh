@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=X2
+DEVICE=realme_trinket
 VENDOR=realme
 
 INITIAL_COPYRIGHT_YEAR=2020

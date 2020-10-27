@@ -18,7 +18,7 @@
 #include "property_service.h"
 #include "vendor_init.h"
 
-struct x2_props
+struct realme_trinket_props
 {
     std::string build_description;
     std::string build_fingerprint;
@@ -87,7 +87,7 @@ void load_nfc_props()
 
 void setRMX(const unsigned int variant)
 {
-    x2_props prop[3] = {};
+    realme_trinket_props prop[3] = {};
 
     //RMX1991
     prop[0] = {
