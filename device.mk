@@ -135,8 +135,8 @@ PRODUCT_COPY_FILES += \
     $(PREBUILT_DVC_PATH)/Kernel/kernel:kernel
 
 # Media
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
+# PRODUCT_COPY_FILES += \
+#     $(LOCAL_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
 
 # NFC
 PRODUCT_PACKAGES += \
