@@ -61,9 +61,9 @@ on property:vold.decrypt=trigger_restart_framework
 
 on post-fs-data
     #Hack until we build the vendor
-    mount none /dev/null /vendor/lib/hw/lights.sm6150.so bind
+    mount none /dev/null /vendor/lib/hw/lights.trinket.so bind
     mount none /dev/null /vendor/lib/hw/android.hardware.light@2.0-impl.so bind
-    mount none /dev/null /vendor/lib64/hw/lights.sm6150.so bind
+    mount none /dev/null /vendor/lib64/hw/lights.trinket.so bind
     mount none /dev/null /vendor/lib64/hw/android.hardware.light@2.0-impl.so bind
     mount none /vendor/lost+found /vendor/overlay bind
     mount none /vendor/lost+found /vendor/euclid bind
