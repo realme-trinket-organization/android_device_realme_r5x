@@ -102,9 +102,6 @@ TARGET_ENABLE_MEDIADRM_64 := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
-# FOD
-TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.realme_trinket
-
 # Graphics
 TARGET_USES_DRM_PP := true
 TARGET_USES_GRALLOC1 := true

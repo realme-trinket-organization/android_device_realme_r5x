@@ -92,7 +92,6 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.realme_trinket \
-    lineage.biometrics.fingerprint.inscreen@1.0-service.realme_trinket \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
 
 # Fingerprint
