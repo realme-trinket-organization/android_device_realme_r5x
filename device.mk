@@ -70,8 +70,9 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
-    init.qcom.rc \
-    init.devicesetting.rc
+    init.qcom.rc
+
+# init.devicesetting.rc
 
 PRODUCT_PACKAGES += \
     fstab.qcom
@@ -84,10 +85,10 @@ PRODUCT_PACKAGES += \
     libvulkan
 
 # Doze
-PRODUCT_PACKAGES += \
-    devicesettings \
-    RealmeDoze \
-    RealmeProximityHelper
+# PRODUCT_PACKAGES += \
+#     devicesettings \
+#     RealmeDoze \
+#     RealmeProximityHelper
 
 # Fingerprint
 PRODUCT_PACKAGES += \
